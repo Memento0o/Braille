@@ -3,26 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto-Play MP3</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var audio = new Audio("https://raw.githubusercontent.com/Memento0o/Braille-/main/أ.mp3"); // Replace with your MP3 link
-            var playPromise = audio.play();
-
-            if (playPromise !== undefined) {
-                playPromise.then(() => {
-                    console.log("Audio is playing");
-                }).catch(error => {
-                    console.log("Auto-play blocked, waiting for user tap...");
-                    document.body.addEventListener("click", function() {
-                        audio.play();
-                    }, { once: true });
-                });
-            }
-        });
-    </script>
+    <title>Test Page</title>
 </head>
 <body>
-    <h1>Playing Audio...</h1>
+    <h1>Hello, GitHub Pages is working!</h1>
 </body>
 </html>
